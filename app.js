@@ -1,22 +1,28 @@
-function passwordChange(event) {
-  console.log(initialPassword.value);
-}
-
 function passwordMatchCheck(event) {
   if (initialPassword.value === confirmedPassword.value) {
-    console.log('YAY');
+    cpLabel.setAttribute('hidden', 'hidden');
+    confirmedPassword.classList.remove('error');
+    initialPassword.classList.remove('error');
   } else {
-    console.log('passwords do not match')
-    console.log(confirmedPassword)
-    var cpLabel = document.getElementById('pc-label')
     cpLabel.removeAttribute('hidden');
     confirmedPassword.classList.add('error');
     initialPassword.classList.add('error');
   }
 }
 
+function passwordCheck(event) {
+  if (!event.target.checkValidity()) {
+    ipLabel.removeAttribute('hidden');
+  } else {
+    ipLabel.setAttribute('hidden', 'hidden');
+  }
+}
+
 var initialPassword = document.getElementById('password-initial');
-initialPassword.addEventListener('change', passwordChange);
+initialPassword.addEventListener('input', passwordCheck);
 
 var confirmedPassword = document.getElementById('password-confirmed');
-confirmedPassword.addEventListener('change', passwordMatchCheck);
+confirmedPassword.addEventListener('input', passwordMatchCheck);
+
+var cpLabel = document.getElementById('pc-label');
+var ipLabel = document.getElementById('pi-label');

@@ -36,6 +36,7 @@ body {
   background-color: white;
   padding: 20px 50px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: 220px;
 }
 
 .input-section h3 {
@@ -101,13 +102,13 @@ input:valid {
   border: 1px solid #596D48;
 }
 
-#pc-label {
+#pc-label, #pi-label {
   color: red;
   text-transform: none !important;
-  margin: 0;
   font-size: 10px;
   font-weight: 100;
   letter-spacing: normal;
+  width: 250px;
 }
 
 .error {
