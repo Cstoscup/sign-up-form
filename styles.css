@@ -167,6 +167,9 @@ button:hover {
   }
   .left-text {
     background-color: transparent;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
   }
   .right-side {
     width: 100%;
