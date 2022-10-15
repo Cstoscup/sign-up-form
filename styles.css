@@ -1,0 +1,146 @@
+@font-face {
+  font-family: Norse-Bold;
+  src: url('Norse-Bold.otf');
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.left-side {
+  width: 40vw;
+  height: 100vh;
+  background-image: url('leaves.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 57.5%;
+}
+
+.right-side {
+  width: 60vw;
+  background-color: #f9fafb;
+}
+
+.right-text {
+  text-align: left;
+  margin: 50px 275px 50px 50px;
+}
+
+.input-section {
+  background-color: white;
+  padding: 20px 50px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.input-section h3 {
+  margin: 0 0 10px;
+}
+
+.left-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 200px;
+  background-color: rgb(0, 0, 0, 0.4);
+  padding: 10px 0;
+}
+
+.photo-cred, a {
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  justify-self: flex-end;
+}
+
+h1 {
+  color: white;
+  font-family: Norse-Bold;
+  font-size: 72px;
+  margin: 0;
+  position: relative;
+  top: 25px;
+}
+
+.odin-logo {
+  height: 100px;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+  margin-bottom: 10px;
+}
+
+input {
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+  width: 250px;
+  height: 20px;
+}
+
+input:focus {
+  outline: none !important;
+  border: 1px solid blue;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 12px;
+}
+
+input:valid {
+  outline: none !important;
+  border: 1px solid #596D48;
+}
+
+#pc-label {
+  color: red;
+  text-transform: none !important;
+  margin: 0;
+  font-size: 10px;
+  font-weight: 100;
+  letter-spacing: normal;
+}
+
+.error {
+  outline: none !important;
+  border: 1px solid red;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: .8px;
+  margin-top: 10px;
+  font-weight: 600;
+  color: rgb(64, 64, 64);
+}
+
+button {
+  background-color: #596D48;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  padding: 10px 40px;
+  border: 1px solid #596D48;
+  border-radius: 4px;
+  margin: 30px 50px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: white;
+  color: #596D48;
+}
+
+.log-in-text {
+  font-size: 14px;
+  margin: 0 50px;
+}
